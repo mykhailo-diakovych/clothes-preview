@@ -74,18 +74,6 @@ export default {
         text: 'T-Shirt',
         value: 'tshirt.png',
       },
-      {
-        text: 'SweetShot',
-        value: 'sweetshot.png',
-      },
-      {
-        text: 'New shirt',
-        value: 'testshirt.png',
-      },
-      {
-        text: 'New shirt',
-        value: '18500_front.png',
-      },
     ],
   },
   data: () => ({
