@@ -88,9 +88,9 @@ import { CANVAS_HEIGHT, CANVAS_WIDTH } from '~/utils/constants'
 
 const socialImage = getShareImage({
   title: 'Deploy a Node.js App to DigitalOcean with SSL',
-  tagline: '#cryptaine #nodejs',
+  tagline: '#devops #nodejs #ssl',
   cloudName: 'jlengstorf',
-  imagePublicID: '/share.png',
+  imagePublicID: 'lwj/blog-post-card',
   titleFont: 'futura',
   taglineFont: 'futura',
   textColor: '232129',
