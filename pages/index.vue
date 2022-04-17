@@ -1,25 +1,37 @@
 <template>
   <div>
     <DesignerClothes />
-    <b-form-group class="mb-2">
+    <b-form-group class='mb-2'>
       <ShareNetwork
-        network="twitter"
-        url="https://res.cloudinary.com/dniafpygj/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1650203926/Screen_Shot_2022-04-17_at_4.57.34_PM_er0o3f.png"
-        title="Ttl"
-        description="Desc"
-        twitter-user="youyuxi"
+        network='twitter'
+        url='https://res.cloudinary.com/dniafpygj/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1650203926/Screen_Shot_2022-04-17_at_4.57.34_PM_er0o3f.png'
+        title='Ttl'
+        description='Desc'
+        twitter-user='youyuxi'
       >
-        <i class="fab fah fa-lg fa-twitter"></i>
+        <i class='fab fah fa-lg fa-twitter'></i>
         <span>Share on Twitter 1</span>
       </ShareNetwork>
     </b-form-group>
 
-    <b-form-group class="mb-2">
-      <a class="twitter-share-button" href="https://twitter.com/intent/tweet" data-size="large">Tweet 1</a>
+    <b-form-group class='mb-2'>
+      <a class='twitter-share-button' href='https://twitter.com/intent/tweet' data-size='large'>Tweet 1</a>
     </b-form-group>
-    <b-form-group class="mb-2">
-      <a href="https://twitter.com/intent/tweet?text=optional%20promo%20text%20http://example.com/foo.htm?bar=123&baz=456" target="_blank">Tweet target="_blank"</a>
+    <b-form-group class='mb-2'>
+      <a
+        href='https://twitter.com/intent/tweet?text=optional%20promo%20text%20http://example.com/foo.htm?bar=123&baz=456'
+        target='_blank'>Tweet target="_blank"</a>
     </b-form-group>
+
+    <blockquote class='twitter-tweet'>
+      <p lang='en' dir='ltr'>Sunsets don&#39;t get much better than this one over <a
+        href='https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw'>@GrandTetonNPS</a>. <a
+        href='https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw'>#nature</a> <a
+        href='https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw'>#sunset</a> <a
+        href='http://t.co/YuKy2rcjyU'>pic.twitter.com/YuKy2rcjyU</a></p>&mdash; US Department of the Interior
+      (@Interior) <a href='https://twitter.com/Interior/status/463440424141459456?ref_src=twsrc%5Etfw'>May 5, 2014</a>
+    </blockquote>
+    <script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script>
   </div>
 </template>
 
@@ -29,7 +41,7 @@ import DesignerClothes from '~/components/DesignerClothes'
 export default {
   name: 'IndexPage',
   components: {
-    DesignerClothes,
+    DesignerClothes
   },
   head: () => ({
     title: 'Designer Clothes',
@@ -47,7 +59,7 @@ export default {
       {
         hid: 'image',
         property: 'image',
-        content: 'https://res.cloudinary.com/dniafpygj/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1650203926/Screen_Shot_2022-04-17_at_4.57.34_PM_er0o3f.png'
+        content: '/image.png'
       },
       {
         hid: 'og:type',
@@ -57,7 +69,7 @@ export default {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://clothes-preview.vercel.app',
+        content: 'https://dev.cryptaine.com/launchpads/top'
       },
       {
         hid: 'og:title',
@@ -72,17 +84,17 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://res.cloudinary.com/dniafpygj/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1650203926/Screen_Shot_2022-04-17_at_4.57.34_PM_er0o3f.png'
+        content: '/image.png'
       },
       {
         hid: 'og:image:width',
         property: 'og:image:width',
-        content: '200',
+        content: '200'
       },
       {
         hid: 'og:image:height',
         property: 'og:image:height',
-        content: '200',
+        content: '200'
       },
       {
         hid: 'twitter:card',
@@ -92,7 +104,7 @@ export default {
       {
         hid: 'twitter:url',
         name: 'twitter:url',
-        content: 'https://clothes-preview.vercel.app',
+        content: 'https://dev.cryptaine.com/launchpads/top'
       },
       {
         hid: 'twitter:title',
@@ -107,14 +119,9 @@ export default {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: 'https://res.cloudinary.com/dniafpygj/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1650203926/Screen_Shot_2022-04-17_at_4.57.34_PM_er0o3f.png'
-      },
-      {
-        hid: 'twitter:image:alt',
-        name: 'twitter:image:alt',
-        content: 'https://res.cloudinary.com/dniafpygj/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1650203926/Screen_Shot_2022-04-17_at_4.57.34_PM_er0o3f.png'
+        content: '/image.png'
       }
     ]
-  }),
+  })
 }
 </script>
