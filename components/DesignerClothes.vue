@@ -60,7 +60,7 @@
             description="This week, I’d like to introduce you to 'Vite', which means 'Fast'. It’s a brand new development setup created by Evan You."
             quote="The hot reload is so fast it\'s near instant. - Evan You"
             hashtags="vuejs,vite,javascript"
-            twitterUser="youyuxi"
+            twitter-user="youyuxi"
           >
             <i class="fab fah fa-lg fa-twitter"></i>
             <span>Share on Twitter</span>
@@ -77,7 +77,7 @@
 
 <script>
 import { fabric } from 'fabric'
-import getShareImage from '@jlengstorf/get-share-image';
+// import getShareImage from '@jlengstorf/get-share-image';
 import {
   canvasItems,
   saveImage,
@@ -86,15 +86,15 @@ import {
 } from '~/utils/utils'
 import { CANVAS_HEIGHT, CANVAS_WIDTH } from '~/utils/constants'
 
-const socialImage = getShareImage({
-  title: 'Deploy a Node.js App to DigitalOcean with SSL',
-  tagline: '#devops #nodejs #ssl',
-  cloudName: 'jlengstorf',
-  imagePublicID: 'lwj/blog-post-card',
-  titleFont: 'futura',
-  taglineFont: 'futura',
-  textColor: '232129',
-});
+// const socialImage = getShareImage({
+//   title: 'Deploy a Node.js App to DigitalOcean with SSL',
+//   tagline: '#devops #nodejs #ssl',
+//   cloudName: 'jlengstorf',
+//   imagePublicID: '/share.png',
+//   titleFont: 'futura',
+//   taglineFont: 'futura',
+//   textColor: '232129',
+// });
 
 export default {
   name: 'DesignerClothes',
@@ -130,7 +130,7 @@ export default {
       {
         hid: 'image',
         property: 'image',
-        content: socialImage
+        content: '/share.png'
       },
       {
         hid: 'og:type',
@@ -155,7 +155,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: socialImage
+        content: '/share.png'
       },
       {
         hid: 'og:image:width',
@@ -190,7 +190,7 @@ export default {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: socialImage
+        content: '/share.png'
       }
     ]
   }),
