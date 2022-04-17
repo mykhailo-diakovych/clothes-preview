@@ -55,9 +55,9 @@
         <b-form-group class="mb-2">
           <ShareNetwork
             network="twitter"
-            url="https://news.vuejs.org/issues/180"
-            title="Say hi to Vite! A brand new, extremely fast development setup for Vue."
-            description="This week, I’d like to introduce you to 'Vite', which means 'Fast'. It’s a brand new development setup created by Evan You."
+            url="https://res.cloudinary.com/dniafpygj/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1650203926/Screen_Shot_2022-04-17_at_4.57.34_PM_er0o3f.png"
+            title="Ttl"
+            description="Desc"
             quote="The hot reload is so fast it\'s near instant. - Evan You"
             hashtags="vuejs,vite,javascript"
             twitter-user="youyuxi"
@@ -68,7 +68,10 @@
         </b-form-group>
 
         <b-form-group class="mb-2">
-          <a class="twitter-share-button" href="https://twitter.com/intent/tweet" data-size="large">Tweet</a>
+          <a class="twitter-share-button" href="https://twitter.com/intent/tweet" data-size="large">Tweet 1</a>
+        </b-form-group>
+        <b-form-group class="mb-2">
+          <a href="https://twitter.com/intent/tweet?text=optional%20promo%20text%20http://example.com/foo.htm?bar=123&baz=456" target="_blank">Tweet target="_blank"</a>
         </b-form-group>
       </b-col>
     </b-row>
@@ -130,7 +133,7 @@ export default {
       {
         hid: 'image',
         property: 'image',
-        content: 'https://res.cloudinary.com/demo/image/upload/w_1.4,c_scale/turtles.jpg'
+        content: 'https://res.cloudinary.com/dniafpygj/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1650203926/Screen_Shot_2022-04-17_at_4.57.34_PM_er0o3f.png'
       },
       {
         hid: 'og:type',
@@ -155,7 +158,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://res.cloudinary.com/demo/image/upload/w_1.4,c_scale/turtles.jpg'
+        content: 'https://res.cloudinary.com/dniafpygj/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1650203926/Screen_Shot_2022-04-17_at_4.57.34_PM_er0o3f.png'
       },
       {
         hid: 'og:image:width',
@@ -190,7 +193,7 @@ export default {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: 'https://res.cloudinary.com/demo/image/upload/w_1.4,c_scale/turtles.jpg'
+        content: 'https://res.cloudinary.com/dniafpygj/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1650203926/Screen_Shot_2022-04-17_at_4.57.34_PM_er0o3f.png'
       }
     ]
   }),
