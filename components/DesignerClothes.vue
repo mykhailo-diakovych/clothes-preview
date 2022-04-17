@@ -63,7 +63,7 @@
             twitter-user="youyuxi"
           >
             <i class="fab fah fa-lg fa-twitter"></i>
-            <span>Share on Twitter</span>
+            <span>Share on Twitter 1</span>
           </ShareNetwork>
         </b-form-group>
 
@@ -130,7 +130,7 @@ export default {
       {
         hid: 'image',
         property: 'image',
-        content: '/share.png'
+        content: 'https://res.cloudinary.com/demo/image/upload/w_1.4,c_scale/turtles.jpg'
       },
       {
         hid: 'og:type',
@@ -155,7 +155,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: '/share.png'
+        content: 'https://res.cloudinary.com/demo/image/upload/w_1.4,c_scale/turtles.jpg'
       },
       {
         hid: 'og:image:width',
@@ -190,7 +190,7 @@ export default {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: '/share.png'
+        content: 'https://res.cloudinary.com/demo/image/upload/w_1.4,c_scale/turtles.jpg'
       }
     ]
   }),
