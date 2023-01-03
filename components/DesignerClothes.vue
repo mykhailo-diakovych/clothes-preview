@@ -27,7 +27,7 @@
           <h4>Clothes Design:</h4>
           <b-form-select
             v-model="selectedDesign"
-            :options="$options.options.designOptions"
+            :options="DESIGN_OPTIONS"
           />
         </b-form-group>
         <b-form-group class="mb-2">
@@ -61,21 +61,12 @@ import { fabric } from 'fabric'
 import {
   canvasItems,
   saveImage,
-  updateTshirtImage,
   uploadImage,
 } from '~/utils/utils'
-import { CANVAS_HEIGHT, CANVAS_WIDTH } from '~/utils/constants'
+import { CANVAS_HEIGHT, CANVAS_WIDTH, DESIGN_OPTIONS } from '~/constants/default'
 
 export default {
   name: 'DesignerClothes',
-  options: {
-    designOptions: [
-      {
-        text: 'T-Shirt',
-        value: 'tshirt.png',
-      },
-    ],
-  },
   data: () => ({
     canvas: null,
     uploadedFile: null,
@@ -83,6 +74,7 @@ export default {
     designColor: '#ffffff',
     CANVAS_WIDTH,
     CANVAS_HEIGHT,
+    DESIGN_OPTIONS,
   }),
   mounted() {
     const TShirtCanvas = this.$refs.TShirtCanvas
@@ -95,9 +87,6 @@ export default {
     document.removeEventListener('keydown', this.onDeleteActiveObject)
   },
   methods: {
-    onChangeTShirtDesign(value) {
-      updateTshirtImage(this.canvas, value)
-    },
     onChangeTShirtColor(event) {
       const TShirtDiv = this.$refs.TShirtDiv
       TShirtDiv.style.backgroundColor = event.target.value
